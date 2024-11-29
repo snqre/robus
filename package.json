@@ -1,0 +1,35 @@
+{
+	"name": "robus",
+	"version": "0.0.1",
+	"description": "",
+	"main": "./dist/Index.cjs",
+	"types": "./dist/Index.d.ts",
+	"license": "Apache-2.0",
+	"type": "module",
+	"repository": {
+		"type": "git",
+		"url": ""
+	},
+	"files": [
+		"dist"
+	],
+	"scripts": {
+		"build": "bun tsup src/Index.ts --format cjs,esm --dts",
+		"lint": "bun tsc"
+	},
+	"publishConfig": {
+		"access": "public"
+	},
+	"devDependencies": {
+		"@types/bun": "latest"
+	},
+	"peerDependencies": {
+		"typescript": "^5.7.2"
+	},
+	"dependencies": {
+		"axios": "^1.7.8",
+		"ts-lib": "^0.0.5",
+		"ts-results": "^3.3.0",
+		"tsup": "^8.3.5"
+	}
+}
