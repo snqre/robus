@@ -6,19 +6,12 @@
 	"types": "./dist/Index.d.ts",
 	"license": "Apache-2.0",
 	"type": "module",
-	"repository": {
-		"type": "git",
-		"url": ""
-	},
-	"files": [
-		"dist"
-	],
+	"repository": {"type": "git", "url": "https://github.com/snqre/robus"},
+	"files": ["dist"],
+	"publishConfig": {"access": "public"},
 	"scripts": {
 		"build": "bun tsup src/Index.ts --format cjs,esm --dts",
 		"lint": "bun tsc"
-	},
-	"publishConfig": {
-		"access": "public"
 	},
 	"devDependencies": {
 		"@types/bun": "latest"
