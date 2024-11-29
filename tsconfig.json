@@ -19,7 +19,8 @@
 		"noUncheckedIndexedAccess": null,
 		"baseUrl": "./src/",
 		"paths": {
-			"->core": ["./core/Index.ts"]
+			"->core": ["./core/Index.ts"],
+			"->web": ["./web/Index.ts"]
 		}
 	}
 }

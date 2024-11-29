@@ -14,9 +14,14 @@
 	"publishConfig": {
 		"access": "public"
 	},
+	"exports": {
+		".": ["./dist/core/Index.cjs"],
+		"./web": ["./dist/web/Index.cjs"]
+	},
 	"scripts": {
 		"build:core": "bun tsup src/core/Index.ts --out-dir dist/core --format cjs,esm --dts",
-		"build": "bun run build:core && bun run lint",
+		"build:web": "bun tsup src/web/Index.ts --out-dir dist/web --format cjs,esm --dts",
+		"build": "bun run build:core && bun run build:web && bun run lint",
 		"lint": "bun tsc"
 	},
 	"devDependencies": {
@@ -30,6 +35,7 @@
 		"axios": "^1.7.8",
 		"react": "^18.3.1",
 		"react-dom": "^18.3.1",
+		"react-router-dom": "^7.0.1",
 		"react-spring": "^9.7.4",
 		"ts-lib": "^0.0.5",
 		"ts-results": "^3.3.0",

@@ -1,0 +1,1 @@
+export type FrequencyUnit = "Hz" | "kHz";

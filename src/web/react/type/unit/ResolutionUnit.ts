@@ -1,0 +1,1 @@
+export type ResolutionUnit = "dpi" | "dpcm" | "dppx";
