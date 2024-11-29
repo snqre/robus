@@ -17,10 +17,12 @@
 		"noUnusedParameters": false,
 		"noPropertyAccessFromIndexSignature": false,
 		"noUncheckedIndexedAccess": null,
-		"baseUrl": "./src/",
+		"baseUrl": ".",
 		"paths": {
-			"->core": ["./core/Index.ts"],
-			"->web": ["./web/Index.ts"]
+			"->core": ["./src/core/Index.ts"],
+			"->server": ["./src/server/Index.ts"],
+			"->ts": ["./src/ts/Index.ts"],
+			"->web": ["./src/web/Index.ts"]
 		}
 	}
 }

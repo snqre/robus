@@ -19,10 +19,7 @@
 		"./web": ["./dist/web/Index.cjs"]
 	},
 	"scripts": {
-		"build:core": "bun tsup src/core/Index.ts --out-dir dist/core --format cjs,esm --dts",
-		"build:web": "bun tsup src/web/Index.ts --out-dir dist/web --format cjs,esm --dts",
-		"build": "bun run build:core && bun run build:web && bun run lint",
-		"lint": "bun tsc"
+		"build": "bun run script/BuildScript.ts"
 	},
 	"devDependencies": {
 		"@types/bun": "latest"
@@ -31,14 +28,17 @@
 		"typescript": "^5.7.2"
 	},
 	"dependencies": {
+		"@types/express": "^5.0.0",
 		"@types/react-dom": "^18.3.1",
 		"axios": "^1.7.8",
+		"express": "^4.21.1",
 		"react": "^18.3.1",
 		"react-dom": "^18.3.1",
 		"react-router-dom": "^7.0.1",
 		"react-spring": "^9.7.4",
 		"ts-lib": "^0.0.5",
 		"ts-results": "^3.3.0",
+		"tsc": "^2.0.4",
 		"tsup": "^8.3.5"
 	}
 }
