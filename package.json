@@ -1,16 +1,22 @@
 {
 	"name": "robus",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"description": "",
-	"main": "./dist/Index.cjs",
-	"types": "./dist/Index.d.ts",
+	"main": "./dist/core/Index.cjs",
+	"types": "./dist/core/Index.d.ts",
 	"license": "Apache-2.0",
 	"type": "module",
-	"repository": {"type": "git", "url": "https://github.com/snqre/robus"},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/snqre/robus"
+	},
 	"files": ["dist"],
-	"publishConfig": {"access": "public"},
+	"publishConfig": {
+		"access": "public"
+	},
 	"scripts": {
-		"build": "bun tsup src/Index.ts --format cjs,esm --dts",
+		"build:core": "bun tsup src/core/Index.ts --out-dir dist/core --format cjs,esm --dts",
+		"build": "bun run build:core && bun run lint",
 		"lint": "bun tsc"
 	},
 	"devDependencies": {
@@ -20,7 +26,11 @@
 		"typescript": "^5.7.2"
 	},
 	"dependencies": {
+		"@types/react-dom": "^18.3.1",
 		"axios": "^1.7.8",
+		"react": "^18.3.1",
+		"react-dom": "^18.3.1",
+		"react-spring": "^9.7.4",
 		"ts-lib": "^0.0.5",
 		"ts-results": "^3.3.0",
 		"tsup": "^8.3.5"
