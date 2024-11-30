@@ -1,5 +1,5 @@
-import type {AbsoluteUnit} from "->web";
-import type {RelativeUnit} from "->web";
+import type {AbsoluteUnit} from "src/web/Mod";
+import type {RelativeUnit} from "src/web/Mod";
 
 export type SizeUnit =
     | AbsoluteUnit

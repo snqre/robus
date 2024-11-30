@@ -1,4 +1,4 @@
-import type {BaseProp} from "->web";
+import type {BaseProp} from "src/web/Mod";
 
 export type ClipPathProp =
     | BaseProp

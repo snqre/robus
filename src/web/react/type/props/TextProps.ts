@@ -1,4 +1,4 @@
-import * as Web from "->web";
+import * as Web from "src/web/Mod";
 
 export type TextProps = {
     textAlign?: Web.CssProps["textAlign"];

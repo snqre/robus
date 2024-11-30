@@ -1,4 +1,4 @@
-import type {SizeUnitProp} from "->web";
+import type {SizeUnitProp} from "src/web/Mod";
 
 export type SizeClampShorthandProps = {
     minW?: SizeUnitProp;

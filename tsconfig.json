@@ -19,10 +19,10 @@
 		"noUncheckedIndexedAccess": null,
 		"baseUrl": ".",
 		"paths": {
-			"->core": ["./src/core/Index.ts"],
-			"->server": ["./src/server/Index.ts"],
-			"->ts": ["./src/ts/Index.ts"],
-			"->web": ["./src/web/Index.ts"]
+			"->core": ["src/core/Mod.ts"],
+			"->server": ["src/server/Mod.ts"],
+			"->ts": ["src/ts/Mod.ts"],
+			"->web": ["src/web/Mod.ts"]
 		}
 	}
 }

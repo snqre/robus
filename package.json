@@ -1,6 +1,6 @@
 {
 	"name": "robus",
-	"version": "0.0.3",
+	"version": "0.0.4",
 	"description": "",
 	"main": "./dist/core/Index.cjs",
 	"types": "./dist/core/Index.d.ts",

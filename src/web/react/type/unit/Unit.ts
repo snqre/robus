@@ -1,9 +1,9 @@
-import type {AbsoluteUnit} from "->web";
-import type {AngleUnit} from "->web";
-import type {FrequencyUnit} from "->web";
-import type {RelativeUnit} from "->web";
-import type {ResolutionUnit} from "->web";
-import type {TimeUnit} from "->web";
+import type {AbsoluteUnit} from "src/web/Mod";
+import type {AngleUnit} from "src/web/Mod";
+import type {FrequencyUnit} from "src/web/Mod";
+import type {RelativeUnit} from "src/web/Mod";
+import type {ResolutionUnit} from "src/web/Mod";
+import type {TimeUnit} from "src/web/Mod";
 
 export type Unit =
     | AbsoluteUnit

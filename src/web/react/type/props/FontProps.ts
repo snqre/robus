@@ -1,4 +1,4 @@
-import * as Web from "->web";
+import * as Web from "src/web/Mod";
 
 export type FontProps = {
     font?: Web.CssProps["font"];

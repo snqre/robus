@@ -1,8 +1,8 @@
-import type {Maybe} from "->core";
-import type {Component} from "->web";
-import {Result} from "->core";
-import {Ok} from "->core";
-import {Err} from "->core";
+import type {Maybe} from "src/core/Mod";
+import type {Component} from "src/web/Mod";
+import {Result} from "src/core/Mod";
+import {Ok} from "src/core/Mod";
+import {Err} from "src/core/Mod";
 import {createRoot as Root} from "react-dom/client";
 
 export type RenderActionR = Result<RenderActionT, RenderActionE>;

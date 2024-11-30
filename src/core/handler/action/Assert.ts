@@ -1,5 +1,5 @@
-import type {Maybe} from "->core";
-import type {Errcode} from "->core";
+import type {Maybe} from "src/core/Mod";
+import type {Errcode} from "src/core/Mod";
 
 export function assert(condition: boolean): asserts condition is true;
 export function assert<T extends Errcode>(condition: boolean, errcode: T): asserts condition is true;

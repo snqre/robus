@@ -1,12 +1,12 @@
-import {build} from "->ts";
+import {build} from "src/ts/Mod";
 
 (async () => {
-    await build({
+    (await build({
         entry: [
-            "src/core/Index.ts",
-            "src/server/Index.ts",
-            "src/web/Index.ts",
-            "src/ts/Index.ts"
+            "src/core/Mod.ts",
+            "src/server/Mod.ts",
+            "src/web/Mod.ts",
+            "src/ts/Mod.ts"
         ],
         outDir: "dist",
         format: ["cjs", "esm"],
@@ -14,5 +14,5 @@ import {build} from "->ts";
         sourcemap: true,
         clean: true,
         config: "tsconfig.json"
-    });
+    })).unwrap();
 })();

@@ -1,4 +1,4 @@
-import type {AbsoluteUnit} from "->web";
-import type {BaseProp} from "->web";
+import type {AbsoluteUnit} from "src/web/Mod";
+import type {BaseProp} from "src/web/Mod";
 
 export type AbsoluteUnitProp = BaseProp | `${number}${AbsoluteUnit}` | number;
