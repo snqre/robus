@@ -20,6 +20,8 @@
 		"baseUrl": ".",
 		"paths": {
 			"->core": ["src/core/Mod.ts"],
+			"->fs": ["src/fs/Mod.ts"],
+			"->path": ["src/path/Mod.ts"],
 			"->server": ["src/server/Mod.ts"],
 			"->ts": ["src/ts/Mod.ts"],
 			"->web": ["src/web/Mod.ts"]

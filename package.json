@@ -1,7 +1,7 @@
 {
 	"name": "robus",
-	"version": "0.0.4",
-	"description": "",
+	"version": "0.0.5",
+	"description": "A util library for working with typescript built on `ts-results`",
 	"main": "./dist/core/Index.cjs",
 	"types": "./dist/core/Index.d.ts",
 	"license": "Apache-2.0",
@@ -15,8 +15,12 @@
 		"access": "public"
 	},
 	"exports": {
-		".": ["./dist/core/Index.cjs"],
-		"./web": ["./dist/web/Index.cjs"]
+		".": ["./dist/core/Mod.cjs"],
+		"./fs": ["./dist/fs/Mod.cjs"],
+		"./path": ["./dist/path/Mod.cjs"],
+		"./server": ["./dist/server/Mod.cjs"],
+		"./ts": ["./dist/ts/Mod.cjs"],
+		"./web": ["./dist/web/Mod.cjs"]
 	},
 	"scripts": {
 		"build": "bun run script/BuildScript.ts"
