@@ -1,6 +1,6 @@
 {
 	"name": "robus",
-	"version": "0.0.5",
+	"version": "0.0.6",
 	"description": "A util library for working with typescript built on `ts-results`",
 	"main": "./dist/core/Index.cjs",
 	"types": "./dist/core/Index.d.ts",

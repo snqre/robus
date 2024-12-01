@@ -1,7 +1,6 @@
 import type {PathLike} from "fs";
 import {Err, Result} from "->core";
 import {Ok} from "->core";
-import {None} from "->core";
 import * as FileSystem from "fs";
 import * as Path from "path";
 import * as Fs from "->fs";
